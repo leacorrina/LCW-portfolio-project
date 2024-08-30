@@ -1,12 +1,42 @@
-h1 {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+:root {
+  --heading-font-family: "Nunito", sans-serif;
+  --default-font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-style: normal;
 }
 
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--default-font-family)
   font-weight: 400;
   font-style: normal;
+}
+
+.hero {
+    margin: 50px 0;
+  padding: 50px 20px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(/images/starrysky.jpg);
+}
+
+.hero h1,
+h2 {
+  color: white;
+  text-align: center;
 }
