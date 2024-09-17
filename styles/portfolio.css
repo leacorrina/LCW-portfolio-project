@@ -34,11 +34,34 @@ a {
   color: var(--branding-color);
 }
 
+nav a:hover,
+nav li.active a {
+  color: blue;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 17px;
+  line-height: 43px;
+}
+
+nav a {
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
 .about-button {
   text-align: center;
   margin: 0 0 50px 0;
 }
 
+.logo {
+  max-height: 40px;
+}
 .hero {
   color: white;
   text-align: center;
